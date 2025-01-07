@@ -1,1 +1,14 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-gray-400: hsl(0, 0%, 59%);
+  --color-gray-800: hsl(0, 0%, 17%);
+  --color-black: black;
+  --color-white: white;
+
+  --font-weight-*: initial;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
