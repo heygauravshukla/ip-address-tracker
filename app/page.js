@@ -1,8 +1,11 @@
 "use client";
+
+import Map from "@/components/Map";
 import Wrapper from "@/components/Wrapper";
 import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [coordinates, setCoordinates] = useState([51.505, -0.09]); // Default coordinates (e.g., London)
   const [ipDetails, setIPDetails] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -23,6 +26,7 @@ export default function Home() {
         throw new Error("Failed to fetch IP details. Please try again.");
       }
       const data = await response.json();
+
       setIPDetails([
         { id: 1, name: "IP Address", value: data.ip },
         {
@@ -33,6 +37,9 @@ export default function Home() {
         { id: 3, name: "Timezone", value: `UTC ${data.location.timezone}` },
         { id: 4, name: "ISP", value: data.isp },
       ]);
+
+      // Update map coordinates
+      setCoordinates([data.location.lat, data.location.lng]);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -87,7 +94,7 @@ export default function Home() {
 
       <main>
         <section className="relative">
-          <Wrapper className="absolute inset-x-0 -top-32 lg:-top-20">
+          <Wrapper className="absolute inset-x-0 -top-32 z-20 lg:-top-20">
             <dl className="mx-auto grid max-w-[69.375rem] gap-6 rounded-2xl bg-white p-6 shadow-lg lg:grid-cols-4 lg:gap-0 lg:p-0">
               {error ? (
                 <div className="text-center lg:col-span-5 lg:p-6">{error}</div>
@@ -112,7 +119,8 @@ export default function Home() {
               )}
             </dl>
           </Wrapper>
-          <div id="map" className="min-h-96"></div>
+          {/* Pass the coordinates dynamically to the Map component */}
+          <Map center={coordinates} zoom={13} />
         </section>
       </main>
     </>
