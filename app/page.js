@@ -1,8 +1,10 @@
 "use client";
 
-import Map from "@/components/Map";
 import Wrapper from "@/components/Wrapper";
+import dynamic from "next/dynamic"; // Dynamically import Map to prevent SSR issues
 import { useEffect, useState } from "react";
+
+const Map = dynamic(() => import("@/components/Map"), { ssr: false }); // Ensure Map is only rendered on the client
 
 export default function Home() {
   const [coordinates, setCoordinates] = useState([51.505, -0.09]); // Default coordinates (e.g., London)
