@@ -44,9 +44,21 @@ export default function Home() {
     }
   };
 
-  // Fetch user's IP details on page load
+  // Fetch user's IP address first, then fetch IP details
   useEffect(() => {
-    fetchIPDetails();
+    const fetchUserIP = async () => {
+      try {
+        // const res = await fetch("https://api64.ipify.org?format=json");
+        // Fetches IPv6 addresses; however, using this may cause the IP address to overflow in the <dd> tag due to its length.
+        const res = await fetch("https://api.ipify.org?format=json"); // Use ipify.org to get the user's public IP
+        const data = await res.json();
+        await fetchIPDetails(data.ip);
+      } catch {
+        setError("Failed to detect user's IP address.");
+      }
+    };
+
+    fetchUserIP();
   }, []);
 
   // Handle form submission
