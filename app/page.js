@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const Map = dynamic(() => import("@/components/Map"), { ssr: false }); // Ensure Map is only rendered on the client
 
 export default function Home() {
-  const [coordinates, setCoordinates] = useState([51.505, -0.09]); // Default coordinates (e.g., London)
+  const [coordinates, setCoordinates] = useState([0, 0]); // Default coordinates (center of the world map: latitude 0, longitude 0)
   const [ipDetails, setIPDetails] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
