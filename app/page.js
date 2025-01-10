@@ -15,13 +15,8 @@ export default function Home() {
     setLoading(true);
     setError(null);
 
-    const apiKey = process.env.NEXT_PUBLIC_IPIFY_API_KEY;
-    const apiUrl = `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}${
-      ip ? `&ipAddress=${ip}` : ""
-    }`;
-
     try {
-      const response = await fetch(apiUrl);
+      const response = await fetch(`/api/ipify?ip=${ip}`);
       if (!response.ok) {
         throw new Error("Failed to fetch IP details. Please try again.");
       }
