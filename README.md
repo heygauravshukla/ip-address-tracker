@@ -41,6 +41,7 @@ _This screenshot demonstrates the functionality of the app, including map render
 
 ### Built With
 
+- [pnPM](https://pnpm.io/) - Fast, disk space efficient package manager
 - [Next.js](https://nextjs.org/) - The React Framework for the Web.
 - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework.
 - [IP Geolocation API by IPify](https://geo.ipify.org/) - Used to fetch IP address location details.
