@@ -65,7 +65,6 @@ Areas I plan to focus on improving include:
 - Adding **detailed comments** to improve code readability.
 - Experimenting with libraries like [Tailwind Merge](https://github.com/dcastil/tailwind-merge) for efficient class management.
 - Migrating to **TypeScript** for stricter type-checking and scalability.
-- Updating the project to use the stable release of **Tailwind CSS v4** once available.
 
 ### Useful Resources
 

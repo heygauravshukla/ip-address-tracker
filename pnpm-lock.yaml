@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@tailwindcss/postcss':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0
         version: 4.0.0
       leaflet:
         specifier: ^1.9.4
@@ -17,6 +17,9 @@ importers:
       next:
         specifier: 15.1.6
         version: 15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      postcss:
+        specifier: ^8.5.1
+        version: 8.5.1
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -24,7 +27,7 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       tailwindcss:
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0
         version: 4.0.0
     devDependencies:
       '@eslint/eslintrc':
