@@ -31,10 +31,10 @@ importers:
         version: 4.0.0
     devDependencies:
       '@eslint/eslintrc':
-        specifier: ^3
+        specifier: ^3.2.0
         version: 3.2.0
       eslint:
-        specifier: ^9
+        specifier: ^9.18.0
         version: 9.18.0(jiti@2.4.2)
       eslint-config-next:
         specifier: 15.1.6
@@ -43,7 +43,7 @@ importers:
         specifier: ^3.4.2
         version: 3.4.2
       prettier-plugin-tailwindcss:
-        specifier: ^0.6.9
+        specifier: ^0.6.11
         version: 0.6.11(prettier@3.4.2)
 
 packages:
