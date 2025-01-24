@@ -2,6 +2,7 @@
 
 import Wrapper from "@/components/wrapper";
 import dynamic from "next/dynamic"; // Dynamically import Map to prevent SSR issues
+import Image from "next/image";
 import { FormEvent, useEffect, useState } from "react";
 
 // Dynamically import the Map component to prevent SSR issues
@@ -44,8 +45,12 @@ export default function Home() {
 
       // Update map coordinates
       setCoordinates([data.location.lat, data.location.lng]);
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("An unknown error occurred.");
+      }
     } finally {
       setLoading(false);
     }
@@ -96,11 +101,11 @@ export default function Home() {
               type="submit"
               className="cursor-pointer rounded-r-2xl bg-black px-6 py-[1.375rem] transition-all hover:bg-gray-800"
             >
-              <img
+              <Image
                 src="/images/icons/icon-arrow.svg"
                 alt="Search"
-                width="11"
-                height="14"
+                width={11}
+                height={14}
                 className="min-w-fit"
               />
             </button>
