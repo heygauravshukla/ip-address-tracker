@@ -1,19 +1,26 @@
 "use client";
 
-import Wrapper from "@/components/Wrapper";
+import Wrapper from "@/components/wrapper";
 import dynamic from "next/dynamic"; // Dynamically import Map to prevent SSR issues
-import { useEffect, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 
-const Map = dynamic(() => import("@/components/Map"), { ssr: false }); // Ensure Map is only rendered on the client
+// Dynamically import the Map component to prevent SSR issues
+const Map = dynamic(() => import("@/components/map"), { ssr: false });
+
+interface IPDetails {
+  id: number;
+  name: string;
+  value: string;
+}
 
 export default function Home() {
-  const [coordinates, setCoordinates] = useState([0, 0]); // Default coordinates (center of the world map: latitude 0, longitude 0)
-  const [ipDetails, setIPDetails] = useState([]);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [coordinates, setCoordinates] = useState<[number, number]>([0, 0]); // Default coordinates (latitude 0, longitude 0)
+  const [ipDetails, setIPDetails] = useState<IPDetails[]>([]);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
 
   // Function to fetch IP details
-  const fetchIPDetails = async (ip = "") => {
+  const fetchIPDetails = async (ip: string = "") => {
     setLoading(true);
     setError(null);
 
@@ -37,7 +44,7 @@ export default function Home() {
 
       // Update map coordinates
       setCoordinates([data.location.lat, data.location.lng]);
-    } catch (err) {
+    } catch (err: any) {
       setError(err.message);
     } finally {
       setLoading(false);
@@ -48,8 +55,6 @@ export default function Home() {
   useEffect(() => {
     const fetchUserIP = async () => {
       try {
-        // const res = await fetch("https://api64.ipify.org?format=json");
-        // Fetches IPv6 addresses; however, using this may cause the IP address to overflow in the <dd> tag due to its length.
         const res = await fetch("https://api.ipify.org?format=json"); // Use ipify.org to get the user's public IP
         const data = await res.json();
         await fetchIPDetails(data.ip);
@@ -62,9 +67,11 @@ export default function Home() {
   }, []);
 
   // Handle form submission
-  const handleSearch = (event) => {
+  const handleSearch = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const ip = event.target.elements.ip.value.trim();
+    const ip = (
+      event.currentTarget.elements.namedItem("ip") as HTMLInputElement
+    ).value.trim();
     if (ip) fetchIPDetails(ip);
   };
 

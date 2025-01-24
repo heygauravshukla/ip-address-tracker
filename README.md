@@ -64,7 +64,6 @@ Areas I plan to focus on improving include:
 - Writing **reusable code components** and adhering to **best practices** for maintainability.
 - Adding **detailed comments** to improve code readability.
 - Experimenting with libraries like [Tailwind Merge](https://github.com/dcastil/tailwind-merge) for efficient class management.
-- Migrating to **TypeScript** for stricter type-checking and scalability.
 
 ### Useful Resources
 

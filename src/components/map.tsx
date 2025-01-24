@@ -4,7 +4,12 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { useEffect } from "react";
 
-export default function Map({ center = [51.505, -0.09], zoom = 13 }) {
+interface MapProps {
+  center?: [number, number];
+  zoom?: number;
+}
+
+export default function Map({ center = [51.505, -0.09], zoom = 13 }: MapProps) {
   useEffect(() => {
     // Initialize the map
     const map = L.map("map").setView(center, zoom);
@@ -24,7 +29,10 @@ export default function Map({ center = [51.505, -0.09], zoom = 13 }) {
 
     L.marker(center, { icon: customIcon }).addTo(map);
 
-    return () => map.remove(); // Clean up on unmount
+    // Cleanup function to remove the map instance
+    return () => {
+      map.remove();
+    };
   }, [center, zoom]);
 
   return <div id="map" className="z-10 h-96 w-full"></div>;
