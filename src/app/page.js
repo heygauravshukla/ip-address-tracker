@@ -70,7 +70,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="min-h-[18.75rem] bg-[url('/images/backgrounds/pattern-bg-mobile.png')] bg-cover bg-center bg-no-repeat lg:min-h-[17.5rem] lg:bg-[url('/images/backgrounds/pattern-bg-desktop.png')]">
+      <header className="min-h-[18.75rem] bg-[url('/backgrounds/pattern-bg-mobile.png')] bg-cover bg-center bg-no-repeat lg:min-h-[17.5rem] lg:bg-[url('/backgrounds/pattern-bg-desktop.png')]">
         <Wrapper className="grid gap-7 pt-7">
           <h1 className="text-center text-[1.625rem] font-medium text-white lg:text-[2rem]">
             IP Address Tracker
@@ -90,7 +90,7 @@ export default function Home() {
               className="cursor-pointer rounded-r-2xl bg-black px-6 py-[1.375rem] transition-all hover:bg-gray-800"
             >
               <img
-                src="/images/icons/icon-arrow.svg"
+                src="/icons/icon-arrow.svg"
                 alt="Search"
                 width="11"
                 height="14"

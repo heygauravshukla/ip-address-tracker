@@ -17,7 +17,7 @@ export default function Map({ center = [51.505, -0.09], zoom = 13 }) {
 
     // Add a marker with a custom icon
     const customIcon = L.icon({
-      iconUrl: "/images/icons/icon-location.svg",
+      iconUrl: "/icons/icon-location.svg",
       iconSize: [46, 56],
       iconAnchor: [12, 41],
     });
