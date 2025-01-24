@@ -41,6 +41,7 @@ _This screenshot demonstrates the functionality of the app, including map render
 
 ### Built With
 
+- [PnPm](https://pnpm.io/) - Fast, disk space efficient package manager.
 - [Next.js](https://nextjs.org/) - The React Framework for the Web.
 - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework.
 - [IP Geolocation API by IPify](https://geo.ipify.org/) - Used to fetch IP address location details.
@@ -61,10 +62,6 @@ Areas I plan to focus on improving include:
 
 - Enhancing **semantics**, **accessibility**, and **SEO** for better usability and visibility.
 - Writing **reusable code components** and adhering to **best practices** for maintainability.
-- Adding **detailed comments** to improve code readability.
-- Experimenting with libraries like [Tailwind Merge](https://github.com/dcastil/tailwind-merge) for efficient class management.
-- Migrating to **TypeScript** for stricter type-checking and scalability.
-- Updating the project to use the stable release of **Tailwind CSS v4** once available.
 
 ### Useful Resources
 
