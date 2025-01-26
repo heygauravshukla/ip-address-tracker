@@ -1,6 +1,5 @@
 "use client";
 
-import Wrapper from "@/components/Wrapper";
 import dynamic from "next/dynamic"; // Dynamically import Map to prevent SSR issues
 import { useEffect, useState } from "react";
 
@@ -71,7 +70,7 @@ export default function Home() {
   return (
     <>
       <header className="min-h-[18.75rem] bg-[url('/backgrounds/pattern-bg-mobile.png')] bg-cover bg-center bg-no-repeat lg:min-h-[17.5rem] lg:bg-[url('/backgrounds/pattern-bg-desktop.png')]">
-        <Wrapper className="grid gap-7 pt-7">
+        <div className="wrapper | grid gap-7 pt-7">
           <h1 className="text-center text-[1.625rem] font-medium text-white lg:text-[2rem]">
             IP Address Tracker
           </h1>
@@ -98,12 +97,12 @@ export default function Home() {
               />
             </button>
           </form>
-        </Wrapper>
+        </div>
       </header>
 
       <main>
         <section className="relative">
-          <Wrapper className="absolute inset-x-0 -top-32 z-20 lg:-top-20">
+          <div className="wrapper | absolute inset-x-0 -top-32 z-20 lg:-top-20">
             <dl className="mx-auto grid max-w-[69.375rem] gap-6 rounded-2xl bg-white p-6 shadow-lg lg:grid-cols-4 lg:gap-0 lg:p-0">
               {error ? (
                 <div className="text-center lg:col-span-5 lg:p-6">{error}</div>
@@ -127,7 +126,7 @@ export default function Home() {
                 ))
               )}
             </dl>
-          </Wrapper>
+          </div>
           {/* Pass the coordinates dynamically to the Map component */}
           <Map center={coordinates} zoom={13} />
         </section>

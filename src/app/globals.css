@@ -12,3 +12,13 @@
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 }
+
+@layer components {
+  .wrapper {
+    --max-width: 80rem;
+    --inline-spacing: --spacing(6);
+
+    width: min(100% - calc(var(--inline-spacing) * 2), var(--max-width));
+    margin-inline: auto;
+  }
+}
