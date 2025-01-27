@@ -27,5 +27,10 @@ export default function Map({ center = [51.505, -0.09], zoom = 13 }) {
     return () => map.remove(); // Clean up on unmount
   }, [center, zoom]);
 
-  return <div id="map" className="z-10 h-96 w-full"></div>;
+  return (
+    <div
+      id="map"
+      className="z-10 min-h-[33rem] w-full lg:min-h-[32.5rem]"
+    ></div>
+  );
 }
