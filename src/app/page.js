@@ -70,8 +70,8 @@ export default function Home() {
   return (
     <>
       <header className="min-h-[18.75rem] bg-[url('/backgrounds/pattern-bg-mobile.png')] bg-cover bg-center bg-no-repeat lg:min-h-[17.5rem] lg:bg-[url('/backgrounds/pattern-bg-desktop.png')]">
-        <div className="wrapper | grid gap-7 pt-7">
-          <h1 className="text-center text-[1.625rem] font-medium text-white lg:text-[2rem]">
+        <div className="wrapper | grid gap-7 pt-[1.625rem] lg:pt-[1.875rem]">
+          <h1 className="text-center text-[1.625rem] font-medium -tracking-[.01em] text-white lg:text-[2rem]">
             IP Address Tracker
           </h1>
           <form
@@ -102,7 +102,8 @@ export default function Home() {
 
       <main>
         <section className="relative">
-          <div className="wrapper | absolute inset-x-0 -top-32 z-20 lg:-top-20">
+          <div className="wrapper | absolute inset-x-0 top-0 z-20 -translate-y-1/2">
+            <h2 className="sr-only">IP details</h2>
             <dl className="mx-auto grid max-w-[69.375rem] gap-6 rounded-2xl bg-white p-6 shadow-lg lg:grid-cols-4 lg:gap-0 lg:p-0">
               {error ? (
                 <div className="text-center lg:col-span-5 lg:p-6">{error}</div>
@@ -119,7 +120,7 @@ export default function Home() {
                     <dt className="text-[0.625rem] font-bold tracking-[0.16em] text-gray-400 uppercase lg:text-xs/[normal] lg:font-medium">
                       {detail.name}
                     </dt>
-                    <dd className="text-xl/[normal] font-medium lg:text-2xl/[normal] lg:tracking-[0.03em]">
+                    <dd className="line-clamp-1 text-xl/[normal] font-medium lg:line-clamp-2 lg:text-2xl/[normal] lg:tracking-[0.03em]">
                       {detail.value}
                     </dd>
                   </div>
