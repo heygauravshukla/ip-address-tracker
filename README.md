@@ -35,7 +35,7 @@ _This screenshot demonstrates the functionality of the app, including map render
 ### Links
 
 - [Solution URL](https://github.com/yoursgaurav/ip-address-tracker)
-- [Live Site URL](https://ip-address-tracker-mu-flax.vercel.app/)
+- [Live Site URL](https://ip-address-tracker-by-yoursgaurav.vercel.app/)
 
 ## My Process
 
