@@ -7,8 +7,9 @@ const rubik = Rubik({
 });
 
 export const metadata = {
-  title: "Frontend Mentor | IP Address Tracker",
-  description: "An IP address tracker app built with Next.js",
+  title: "IP Address Tracker",
+  description:
+    "An IP address tracker web application that quickly locates and maps IP addresses.",
 };
 
 export default function RootLayout({ children }) {
