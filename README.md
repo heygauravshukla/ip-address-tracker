@@ -68,7 +68,7 @@ In future projects, I intend to focus on the following areas for improvement:
 
 ### Useful resources
 
-- [<dl>: The Description List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) - This MDN Web Docs article provided valuable insight into the semantic use of description lists, improving my HTML structure.
+- [`<dl>`: The Description List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) - This MDN Web Docs article provided valuable insight into the semantic use of description lists, improving my HTML structure.
 - [Building a Pricing Section With Tailwind CSS](https://youtu.be/WMGFQwewVa4?si=H4ppVgT8QCyGIopa&t=385) - This YouTube video by simonswiss offered practical guidance on centering elements precisely using Tailwind CSS, which proved applicable to this project.
 
 ## Author
