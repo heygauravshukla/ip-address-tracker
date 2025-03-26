@@ -1,82 +1,78 @@
-# Frontend Mentor - IP Address Tracker Solution
+# IP Address Tracker
 
-This is a solution to the [IP Address Tracker Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of Contents
+## Table of contents
 
 - [Overview](#overview)
-  - [The Challenge](#the-challenge)
+  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My Process](#my-process)
-  - [Built With](#built-with)
-  - [What I Learned](#what-i-learned)
-  - [Continued Development](#continued-development)
-  - [Useful Resources](#useful-resources)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
-### The Challenge
+### The challenge
 
 Users should be able to:
 
 - View the optimal layout for each page depending on their device's screen size.
 - See hover states for all interactive elements on the page.
-- See their own IP address and location on the map upon initial page load.
-- Search for any IP address or domain and view the key information and location on the map.
+- See their own IP address on the map on the initial page load.
+- Search for any IP addresses or domains and see the key information and location.
 
 ### Screenshot
 
 ![](/public/screenshots/desktop.png)
-_This screenshot demonstrates the functionality of the app, including map rendering and IP information display._
 
 ### Links
 
-- **Solution URL:** [https://www.frontendmentor.io/solutions/ip-address-tracker-solution-OMnMwcpeo7](https://www.frontendmentor.io/solutions/ip-address-tracker-solution-OMnMwcpeo7)
-- **Live Site URL:** [https://ip-address-tracker-heygauravshukla.vercel.app](https://ip-address-tracker-heygauravshukla.vercel.app)
+- Solution URL: [https://www.frontendmentor.io/solutions/ip-address-tracker-solution-OMnMwcpeo7](https://www.frontendmentor.io/solutions/ip-address-tracker-solution-OMnMwcpeo7)
+- Live Site URL: [https://ip-address-tracker-heygauravshukla.vercel.app](https://ip-address-tracker-heygauravshukla.vercel.app)
 
-## My Process
+## My process
 
-### Built With
+### Built with
 
-- [PnPm](https://pnpm.io/) - Fast, disk space efficient package manager.
-- [Next.js](https://nextjs.org/) - The React Framework for the Web.
-- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework.
-- [IP Geolocation API by IPify](https://geo.ipify.org/) - Used to fetch IP address location details.
-- [Leaflet.js](https://leafletjs.com/) - A library to generate and render interactive maps.
+- Semantic JSX markup
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [Leaflet](https://leafletjs.com/) - JS library for mobile-friendly interactive maps
+- [IP Geolocation API](https://geo.ipify.org/) - API to look up IP locations accurately
+- [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager
 
-### What I Learned
+### What I learned
 
-This project helped me deepen my understanding of:
+This project enhanced my understanding of several key concepts, including:
 
-- Integrating external APIs into a Next.js project and handling dynamic responses.
-- Using map libraries like Leaflet.js to implement interactive map features.
-- Securing sensitive information (like API keys) with environment variables to prevent accidental exposure in public repositories.
-- Leveraging Next.js Server-Side Rendering (SSR) to handle API requests securely and prevent key exposure in network requests.
+- Integrating external APIs into a Next.js project and managing dynamic responses effectively.
+- Implementing interactive map features using the Leaflet library.
+- Securing sensitive information, such as API keys, through environment variables to prevent exposure in public repositories.
+- Utilizing Next.js Server-Side Rendering (SSR) to handle API requests securely, thereby avoiding key exposure in network traffic.
 
-### Continued Development
+### Continued development
 
-Areas I plan to focus on improving include:
+In future projects, I intend to focus on the following areas for improvement:
 
-- Enhancing **semantics**, **accessibility**, and **SEO** for better usability and visibility.
-- Writing **reusable code components** and adhering to **best practices** for maintainability.
+- Incorporating TypeScript to improve type safety and code reliability.
+- Utilizing shadcn/ui to streamline the development of accessible and customizable UI components.
 
-### Useful Resources
+### Useful resources
 
-- [Next.js Documentation](https://nextjs.org/docs) - Provided detailed guidance on leveraging Server-Side Rendering (SSR) and API routes for secure data handling.
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Helped in designing a responsive and modern UI with utility-first CSS classes.
-- [Leaflet.js Documentation](https://leafletjs.com/) - A comprehensive guide for integrating interactive maps and handling geospatial data efficiently.
-- [IPify API Documentation](https://geo.ipify.org/) - Essential for understanding the structure and capabilities of the IP Geolocation API used in the project.
-- [MDN Web Docs](https://developer.mozilla.org/) - Served as a quick reference for JavaScript, HTML, and CSS best practices.
-- [ChatGPT](https://chatgpt.com) - Assisted in troubleshooting issues, integrating Leaflet.js, and optimizing API usage during development.
+- [<dl>: The Description List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) - This MDN Web Docs article provided valuable insight into the semantic use of description lists, improving my HTML structure.
+- [Building a Pricing Section With Tailwind CSS](https://youtu.be/WMGFQwewVa4?si=H4ppVgT8QCyGIopa&t=385) - This YouTube video by simonswiss offered practical guidance on centering elements precisely using Tailwind CSS, which proved applicable to this project.
 
 ## Author
 
-- Frontend Mentor - [@yourusgaurav](https://www.frontendmentor.io/profile/yourusgaurav)
-- X (formerly Twitter) - [@heygauravshukla](https://www.x.com/heygauravshukla)
-
-## Acknowledgments
-
-A big thanks to [Frontend Mentor](https://www.frontendmentor.io/) for creating this challenging and rewarding project. Special thanks to [ChatGPT](https://chatgpt.com) for providing invaluable assistance with API and library integrations throughout the project.
+- Website - [Gaurav Shukla](https://heygauravshukla.vercel.app)
+- Frontend Mentor - [@heygauravshukla](https://www.frontendmentor.io/profile/heygauravshukla)
+- X - [@heygauravshukla](https://www.x.com/heygauravshukla)
