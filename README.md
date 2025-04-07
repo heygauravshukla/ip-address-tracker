@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/ip-address-tracker-solution-OMnMwcpeo7](https://www.frontendmentor.io/solutions/ip-address-tracker-solution-OMnMwcpeo7)
-- Live Site URL: [https://ip-address-tracker-heygauravshukla.vercel.app](https://ip-address-tracker-heygauravshukla.vercel.app)
+- Live Site URL: [https://ip-address-tracker-heygauravshukla.netlify.app](https://ip-address-tracker-heygauravshukla.netlify.app)
 
 ## My process
 
