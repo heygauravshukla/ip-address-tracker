@@ -73,6 +73,6 @@ In future projects, I intend to focus on the following areas for improvement:
 
 ## Author
 
-- Website - [Gaurav Shukla](https://heygauravshukla.vercel.app)
+- Website - [Gaurav Shukla](https://heygauravshukla.netlify.app)
 - Frontend Mentor - [@heygauravshukla](https://www.frontendmentor.io/profile/heygauravshukla)
 - X - [@heygauravshukla](https://www.x.com/heygauravshukla)
